@@ -6,7 +6,7 @@ st.set_page_config(page_title='Prediction of Disease Outbreaks',
                    layout='wide',
                    page_icon="👩‍⚕️")
 
-diabetes_model=pickle.load(open("C:/Users/DELL/Desktop/project/aicte/diabetes_model.sav","rb"))
+diabetes_model=pickle.load(open("diabetes_model.sav","rb"))
 heart_disease_model=pickle.load(open("C:/Users/DELL/Desktop/project/aicte/heartdisease_model.sav","rb"))
 parkinsons_model=pickle.load(open("C:/Users/DELL/Desktop/project/aicte/parkinson_model.sav","rb"))
 with st.sidebar:
