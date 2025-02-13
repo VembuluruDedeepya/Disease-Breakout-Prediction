@@ -7,8 +7,8 @@ st.set_page_config(page_title='Prediction of Disease Outbreaks',
                    page_icon="👩‍⚕️")
 
 diabetes_model=pickle.load(open("diabetes_model.sav","rb"))
-heart_disease_model=pickle.load(open("C:/Users/DELL/Desktop/project/aicte/heartdisease_model.sav","rb"))
-parkinsons_model=pickle.load(open("C:/Users/DELL/Desktop/project/aicte/parkinson_model.sav","rb"))
+heart_disease_model=pickle.load(open("heartdisease_model.sav","rb"))
+parkinsons_model=pickle.load(open("parkinson_model.sav","rb"))
 with st.sidebar:
     selected=option_menu("Prediction of disease outbreak system",["Diabetes Prediction","Heart Disease Prediction","Parkinsons Prediction"],
                          menu_icon="hospital.fill",icons=["activity","heart","person"],default_index=0)
